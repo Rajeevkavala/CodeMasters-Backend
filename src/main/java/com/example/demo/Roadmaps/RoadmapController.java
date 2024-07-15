@@ -7,7 +7,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/roadmaps")
-@CrossOrigin(origins = "https://codemasters-edu.netlify.app/")
+@CrossOrigin(origins = {
+	"https://codemasters-edu.netlify.app/",
+	"https://codemasters-two.vercel.app/"
+})
 public class RoadmapController {
 
     @Autowired
