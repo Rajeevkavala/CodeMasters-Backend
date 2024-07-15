@@ -12,7 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/team-members")
-@CrossOrigin(origins = "https://codemasters-edu.netlify.app/")
+@CrossOrigin(origins = {
+	"https://codemasters-edu.netlify.app/",
+	"https://codemasters-two.vercel.app/"
+})
 public class TeamMemberController {
     @Autowired
     private TeamMemberService service;

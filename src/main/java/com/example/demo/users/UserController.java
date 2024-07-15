@@ -9,7 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 
-@CrossOrigin(origins = "https://codemasters-edu.netlify.app/")
+@CrossOrigin(origins = {
+	"https://codemasters-edu.netlify.app/",
+	"https://codemasters-two.vercel.app/"
+})
 public class UserController {
     
     @Autowired
